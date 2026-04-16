@@ -1,0 +1,374 @@
+/* --- Global Styles & Vibrant Variables --- */
+:root {
+    --primary-color: #00b4d8; /* Poster wala bright aur energetic Cyan */
+    --secondary-color: #FFD700; /* Bilkul bright chamakta hua Yellow */
+    --dark-blue: #023047; /* Gehra Blue (contrast ke liye) */
+    --white: #ffffff;
+    --text-dark: #0f172a; /* Saaf aur deep grey text */
+    --text-muted: #475569;
+    --bg-light: #f8fafc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.container {
+    width: 88%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background-color: var(--white);
+    padding: 15px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06); 
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.cta-nav {
+    background-color: var(--secondary-color);
+    padding: 10px 24px;
+    border-radius: 8px; 
+    color: #000000 !important; /* Yellow par black text best lagta hy */
+    font-weight: 800;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3); /* Yellow glow */
+}
+
+.cta-nav:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 215, 0, 0.5);
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: linear-gradient(135deg, #00b4d8 0%, #0077b6 100%);
+    text-align: center;
+    padding: 90px 0; 
+    color: var(--white);
+}
+
+.hero h3 {
+    font-size: 1.2rem; 
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #caf0f8;
+}
+
+.academy-title {
+    font-size: 4rem; 
+    color: var(--white); 
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.2); 
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.tagline {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--secondary-color); /* Bright yellow tagline */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* --- Programs Section --- */
+.programs {
+    background-color: var(--bg-light);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.programs h2 {
+    color: var(--dark-blue);
+    font-size: 2.5rem; 
+    margin-bottom: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.program-card {
+    background-color: var(--white); 
+    padding: 40px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06); 
+    transition: all 0.3s ease;
+    border-bottom: 6px solid var(--primary-color); 
+}
+
+.program-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,180,216,0.2); /* Cyan glow on hover */
+}
+
+.program-card h3 {
+    font-size: 2.2rem; 
+    color: var(--dark-blue);
+    margin-bottom: 12px;
+    font-weight: 800;
+}
+
+.program-card p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* --- Why Us Section --- */
+.why-us {
+    background-color: var(--dark-blue); 
+    padding: 80px 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.why-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.why-item {
+    background: rgba(255, 255, 255, 0.05); 
+    padding: 35px 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.why-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+    border-color: var(--secondary-color); /* Yellow border on hover */
+}
+
+.why-item i {
+    font-size: 3rem; 
+    color: var(--secondary-color); /* Bright yellow icons */
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.4); /* Icon glow */
+}
+
+.why-item h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* --- Admission Ribbon --- */
+.admission-ribbon {
+    background-color: var(--primary-color);
+    background-image: linear-gradient(45deg, var(--primary-color) 0%, #48cae4 100%);
+    padding: 70px 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.ribbon-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.enroll-text {
+    background-color: var(--dark-blue);
+    color: var(--secondary-color); /* Yellow text in dark pill */
+    padding: 8px 25px;
+    font-weight: 800;
+    border-radius: 30px;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.admission-status {
+    font-size: 3.5rem; 
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.btn-primary {
+    background-color: var(--secondary-color); /* Super bright yellow */
+    color: #000000; /* Black text for maximum punch */
+    padding: 16px 45px;
+    text-decoration: none;
+    font-weight: 900;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.5); /* Big yellow glow */
+}
+
+.btn-primary:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.7);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--white);
+    padding: 50px 0;
+    color: var(--text-dark);
+    border-top: 2px solid #e2e8f0;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-address h3 {
+    font-size: 1.3rem;
+    color: var(--dark-blue);
+    margin-bottom: 8px;
+    font-weight: 800;
+}
+
+.footer-address p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.footer-contact {
+    text-align: right;
+}
+
+.footer-contact i {
+    color: var(--primary-color);
+    margin-right: 12px;
+    font-size: 1.4rem;
+}
+
+.footer-contact span {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.footer-contact p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+/* --- Mobile Menu Styles & Responsive Design --- */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: row; 
+    }
+
+    .menu-toggle {
+        display: block; 
+    }
+    
+    nav ul {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: var(--white);
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        padding: 20px 0;
+    }
+
+    nav ul.active {
+        display: flex; 
+    }
+    
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .academy-title {
+        font-size: 2.8rem;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-contact {
+        text-align: center;
+    }
+}
