@@ -4,7 +4,7 @@ Learnix Academy aik modern educational landing page hy jo students ko profession
 
 ## 🚀 Live Demo
 Aap is website ko yahan live dekh sakte hain: 
-**[Live Demo Link Yahan Dalein]** (GitHub Pages ka link yahan paste karein)
+**https://saad-innovation.github.io/Learnix-Academy-Landing-Page/** (GitHub Pages ka link yahan paste karein)
 
 ## ✨ Key Features
 - **Modern & Vibrant UI:** Poster-inspired energetic colors (Cyan and Gold) ke sath professional look.
