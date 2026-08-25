@@ -4,120 +4,223 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Primary Meta Tags -->
     <title>Learnix Academy | Best Coaching in Sargodha</title>
     <meta name="title" content="Learnix Academy | Best Coaching in Sargodha">
-    <meta name="description" content="Learnix Academy offers the best interactive learning environment, experienced instructors, and affordable fees for 6th to 12th-grade students in Satellite Town, Sargodha. Admission Open!">
-    <meta name="keywords" content="Learnix Academy, Tuition center Sargodha, Coaching center, 9th 10th maths tuition, experienced instructors Sargodha, Satellite Town academy">
-    <meta name="author" content="Saad">
+    <meta name="description" content="Learnix Academy offers the best interactive learning environment, experienced instructors, and affordable fees for 6th to 12th-grade students in Satellite Town, Sargodha.">
+    <meta name="keywords" content="Learnix Academy, Tuition center Sargodha, Coaching center, 9th 10th maths tuition, Satellite Town academy">
+    <meta name="author" content="Saad Ali">
 
+    <!-- Open Graph / Facebook / LinkedIn -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://saad-innovation.github.io/learnix-academy/">
     <meta property="og:title" content="Learnix Academy | Shape Your Future">
     <meta property="og:description" content="Enroll today for the best interactive learning experience in Sargodha. Flexible timings and affordable fees.">
-    <meta property="og:image" content="path_to_logo_image.png">
+    <meta property="og:image" content="assets/images/og-image.jpg">
 
-    <link rel="icon" type="image/png" href="path_to_logo_image.png">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="path_to_logo_image.png" alt="Learnix Academy Logo">
-            </div>
-            <div class="menu-toggle" id="mobile-menu">
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo" aria-label="Learnix Academy Home">
+                <!-- Replace with actual logo -->
+                <h2><i class="fas fa-graduation-cap"></i> Learnix</h2>
+            </a>
+            
+            <!-- Accessibility: aria-expanded added for screen readers -->
+            <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation" aria-expanded="false">
                 <i class="fas fa-bars"></i>
-            </div>
-            <nav>
-                <ul>
+            </button>
+            
+            <nav class="main-nav">
+                <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#programs">Programs</a></li>
                     <li><a href="#why-us">Why Us</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#admission" class="cta-nav">Admission</a></li>
+                    <li><a href="#contact" class="btn btn-outline">Admission</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-text">
-                <h3>Empowering Minds, Shaping Futures!</h3>
-                <h1 class="academy-title">Learnix Academy</h1>
-                <p class="tagline">Learn to create your future</p>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge">Session 2026 Admissions Open</span>
+                    <h1 class="hero-title">Empowering Minds,<br> <span class="highlight">Shaping Futures!</span></h1>
+                    <p class="hero-subtitle">Learnix Academy provides the best interactive learning environment to help students excel in their academic journey.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Enroll Today <i class="fas fa-arrow-right"></i></a>
+                        <a href="#programs" class="btn btn-secondary">Explore Programs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats/Highlight Ribbon -->
+        <section class="stats-ribbon">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Students Taught</p>
+                </div>
+                <div class="stat-item">
+                    <h3>10+</h3>
+                    <p>Expert Teachers</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Result Oriented</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Section -->
+        <section id="programs" class="programs section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Academic Programs</h2>
+                    <p>Tailored coaching for every grade level to ensure conceptual clarity.</p>
+                </div>
+                
+                <div class="programs-grid">
+                    <article class="program-card">
+                        <div class="card-icon"><i class="fas fa-book-open"></i></div>
+                        <h3>Middle Level</h3>
+                        <span class="grade-badge">6th - 8th Grade</span>
+                        <ul class="subject-list">
+                            <li><i class="fas fa-check-circle"></i> Mathematics</li>
+                            <li><i class="fas fa-check-circle"></i> General Science</li>
+                            <li><i class="fas fa-check-circle"></i> English Grammar</li>
+                        </ul>
+                    </article>
+
+                    <article class="program-card">
+                        <div class="card-icon"><i class="fas fa-microscope"></i></div>
+                        <h3>Matric & Inter</h3>
+                        <span class="grade-badge">9th - 12th Grade</span>
+                        <ul class="subject-list">
+                            <li><i class="fas fa-check-circle"></i> Maths & Physics</li>
+                            <li><i class="fas fa-check-circle"></i> Chemistry & Biology</li>
+                            <li><i class="fas fa-check-circle"></i> Computer Science</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section id="why-us" class="why-us section-padding bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose Learnix?</h2>
+                    <p>We don't just teach; we mentor students for a better tomorrow.</p>
+                </div>
+                
+                <div class="why-grid">
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <h4>Expert Instructors</h4>
+                        <p>Highly qualified teachers dedicated to student success.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h4>Interactive Learning</h4>
+                        <p>Modern teaching methods that make concepts easy to grasp.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                        <h4>Flexible Timings</h4>
+                        <p>Batches scheduled conveniently for school and college students.</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon"><i class="fas fa-wallet"></i></div>
+                        <h4>Affordable Fees</h4>
+                        <p>Premium education quality without the heavy financial burden.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Enrollment Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Ready to secure your admission? Contact us today!</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>751-A, Satellite Town, Sargodha</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+92 304 0642009</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A real project must have a form UI for recruiters to see -->
+                <form class="contact-form" action="#" method="POST">
+                    <h3>Request a Call Back</h3>
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Student Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="input-group">
+                        <select id="grade" required>
+                            <option value="" disabled selected>Select Grade</option>
+                            <option value="middle">6th - 8th</option>
+                            <option value="matric">9th - 10th</option>
+                            <option value="inter">11th - 12th</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Learnix Academy</h3>
+                <p>Empowering the youth of Sargodha through quality education and mentorship.</p>
+            </div>
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
-    </section>
-
-    <section id="admission" class="admission-ribbon">
-        <div class="container">
-            <div class="ribbon-content">
-                <span class="enroll-text">Enroll Now</span>
-                <h2 class="admission-status">Admission Open</h2>
-                <a href="#contact" class="btn-primary">Enroll Today</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="programs" class="programs">
-        <div class="container">
-            <h2>Programs We Provide</h2>
-            <div class="programs-grid">
-                <div class="program-card">
-                    <h3>6<sup>th</sup> - 8<sup>th</sup></h3>
-                    <p>Maths, Science, English</p>
-                </div>
-                <div class="program-card">
-                    <h3>9<sup>th</sup> - 12<sup>th</sup></h3>
-                    <p>Maths, Science, English</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="why-us" class="why-us">
-        <div class="container">
-            <h2>Why Choose Learnix?</h2>
-            <div class="why-grid">
-                <div class="why-item">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <h4>Experienced Instructors</h4>
-                </div>
-                <div class="why-item">
-                    <i class="fas fa-users"></i>
-                    <h4>Interactive Learning Environment</h4>
-                </div>
-                <div class="why-item">
-                    <i class="fas fa-clock"></i>
-                    <h4>Flexible Timings</h4>
-                </div>
-                <div class="why-item">
-                    <i class="fas fa-wallet"></i>
-                    <h4>Affordable Fees</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container footer-grid">
-            <div class="footer-address">
-                <h3>Address:</h3>
-                <p>751-A, Satellite Town, Sargodha</p>
-            </div>
-            <div class="footer-contact">
-                <i class="fas fa-phone-alt"></i>
-                <span>+92 304 0642009</span>
-                <p>For Enquiries & Admission Info</p>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Learnix Academy. Designed & Developed by <span class="developer">Saad Ali</span>.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
-
 </body>
 </html>
