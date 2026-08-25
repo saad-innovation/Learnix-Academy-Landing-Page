@@ -156,6 +156,36 @@ nav ul li a:hover {
     color: var(--text-muted);
 }
 
+/* --- Stats Ribbon (NEW) --- */
+.stats-ribbon {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 50px 0;
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+    margin-bottom: 5px;
+}
+
+.stat-item p {
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
 /* --- Programs Section (Glass Cards) --- */
 .programs {
     padding: 100px 0;
@@ -184,12 +214,11 @@ nav ul li a:hover {
     border: 1px solid var(--glass-border);
     padding: 45px 25px;
     border-radius: 16px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
 }
 
-/* Top glowing line on cards */
 .program-card::before {
     content: '';
     position: absolute;
@@ -246,7 +275,7 @@ nav ul li a:hover {
 }
 
 .why-item:hover {
-    background: rgba(139, 92, 246, 0.05); /* Purple tint on hover */
+    background: rgba(139, 92, 246, 0.05); 
     transform: translateY(-5px);
     border-color: var(--secondary-color); 
     box-shadow: 0 10px 30px rgba(139, 92, 246, 0.15);
@@ -254,7 +283,6 @@ nav ul li a:hover {
 
 .why-item i {
     font-size: 3rem; 
-    /* Gradient Icon */
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -329,6 +357,101 @@ nav ul li a:hover {
     box-shadow: 0 0 35px rgba(0, 240, 255, 0.7);
 }
 
+/* --- Contact Section & Form (NEW) --- */
+.contact {
+    padding: 100px 0;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.contact-info h2 {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.contact-info > p {
+    color: var(--text-muted);
+    margin-bottom: 40px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    background: var(--glass-bg);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+}
+
+.info-item i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+}
+
+.contact-form {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.contact-form h3 {
+    margin-bottom: 25px;
+    font-size: 1.5rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input, 
+.input-group select {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    color: var(--white);
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+    color: #64748b;
+}
+
+.input-group select option {
+    background: var(--dark-bg);
+    color: var(--white);
+}
+
+.input-group input:focus, 
+.input-group select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.btn-block {
+    width: 100%;
+    margin-top: 10px;
+}
+
 /* --- Footer --- */
 footer {
     background-color: #02040a;
@@ -378,12 +501,45 @@ footer {
     margin-top: 8px;
 }
 
-/* --- Mobile Menu --- */
+.footer-social a {
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--glass-border);
+    color: var(--text-muted);
+}
+
+.developer {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* --- Mobile Menu & Responsive Design --- */
 .menu-toggle {
     display: none;
     font-size: 1.8rem;
     color: var(--white);
     cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+    .stats-grid {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 768px) {
